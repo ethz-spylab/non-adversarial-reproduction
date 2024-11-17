@@ -1,0 +1,48 @@
+[project]
+name = "non-adversarial-reproduction"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Michael Aerni", email = "michael.aerni@inf.ethz.ch" },
+    { name = "Edoardo Debenedetti", email = "edoardo.debenedetti@inf.ethz.ch" },
+]
+dependencies = [
+    "openai~=1.51",
+    "anthropic>=0.21.3",
+    "tqdm>=4.66.2",
+    "numpy>=1.26.4",
+    "matplotlib>=3.8.3",
+    "uv>=0.2.2",
+    "tiktoken>=0.6.0",
+    "ipython>=8.24.0",
+    "ipykernel>=6.29.4",
+    "blobfile>=2.1.1",
+    "seaborn>=0.13.2",
+    "setuptools>=69.5.1",
+    "packaging>=24.0",
+    "datasets>=2.19.2",
+    "zstandard>=0.23.0",
+    "selenium>=4.24.0",
+    "pytest>=8.3.3",
+    "click>=8.1.7",
+    "jsonlines>=4.0.0",
+    "tenacity>=9.0.0",
+    "torch~=2.2",
+    "transformers~=4.40",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest>=8.3.3",
+    "pytest-dotenv>=0.5.2",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
